@@ -1,0 +1,169 @@
+
+/* Estilos generales */
+body {
+    background-color: #000; 
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #00ffcc;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p {
+    color: #f1f1f1;
+    font-size: 1.2em;
+}
+
+
+a {
+    color: #00ffcc;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+/* Estilo del header */
+header {
+    background: linear-gradient(45deg, #1a1a1a, #222);
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contenido-header h1 {
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+.imagen-principal {
+    width: 220px;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imagen-principal:hover {
+    transform: scale(1.1);
+}
+
+/* Sección centrada */
+.seccion-centrada {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Tabla principal */
+.tabla-principal {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    border-spacing: 20px;
+    padding: 20px;
+}
+
+.tabla-principal td {
+    background-color: #444444;
+    padding: 40px;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.tabla-principal td:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Sección de evolución */
+.seccion-evolucion {
+    background-color: #3f5e56;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.seccion-evolucion h2 {
+    margin-bottom: 20px;
+}
+
+.seccion-evolucion p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+/* Sección de imagen */
+.seccion-imagen {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.imagen-evolucion {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.imagen-evolucion:hover {
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .tabla-principal {
+        display: block;
+    }
+
+    .tabla-principal td {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .seccion-centrada, .seccion-evolucion {
+        width: 100%;
+    }
+
+    .imagen-principal, .imagen-evolucion {
+        width: 100%;
+    }
+}
